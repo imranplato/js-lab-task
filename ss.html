@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_Task</title>
+</head>
+<body>
+    <script>
+        /// MD Imran Hossain (042)
+
+        // ///Calculator Function ///
+        let calculator = function(a ,b ,c){
+            if(c == 1) return a+b;
+            else if(c == 2) return a-b;
+            else if(c == 3) return a*b;
+            else if(c == 4) return a/b;
+            else return -1;
+        }
+        let a = parseInt(prompt("enter a number"));
+        let b = parseInt(prompt("enter a number"));
+        let c = parseInt(prompt("enter a number"));
+        document.write(calculator(a, b, c));
+
+        ///max element in array///
+        let a = parseInt(prompt("enter size"));
+        let array = [a];
+        let maxi=0;
+        for(let i=0; i<a; i++){
+            array[i] = parseInt(prompt("enter a element"));
+            if(array[i] > maxi){
+                maxi = array[i];
+            }
+        }
+        document.write(maxi);
+
+        ///print even element from array///
+        let even = function(arr = [], a){
+            let v = [];
+            for(let i = 0;i < a;i++){
+                if(arr[i]%2 != 1){
+                    v.push(arr[i]);
+                }
+            }
+            return v;
+        }
+        let a = parseInt(prompt("enter size"));
+        let array = [a];
+        
+        for(let i=0; i<a; i++){
+            array[i] = parseInt(prompt("enter a element"));
+           
+        }
+        document.write(even(array, a));
+    </script>
+</body>
+</html>
